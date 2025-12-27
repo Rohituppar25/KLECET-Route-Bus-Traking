@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg">
+
+    <!-- Scrollable Profile Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="70dp"> <!-- space so content not hidden behind nav -->
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <!-- Profile Title -->
+            <TextView
+                android:id="@+id/profileTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Student Profile"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- Name -->
+            <TextView
+                android:id="@+id/nameTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Name: "
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@id/profileTitle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- USN -->
+            <TextView
+                android:id="@+id/usnTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="USN: "
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@id/nameTextView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Email -->
+            <TextView
+                android:id="@+id/emailTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Email: "
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@id/usnTextView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Branch -->
+            <TextView
+                android:id="@+id/branchTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Branch: "
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@id/emailTextView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Semester -->
+            <TextView
+                android:id="@+id/semesterTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Semester: "
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@id/branchTextView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Change Password -->
+            <Button
+                android:id="@+id/changePasswordButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="@android:color/holo_blue_light"
+                android:text="Change Password"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/semesterTextView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Logout -->
+            <Button
+                android:id="@+id/logoutButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@android:color/holo_red_light"
+                android:text="Logout"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/changePasswordButton"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <!-- Fixed Bottom Navigation -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@android:color/white"
+        app:menu="@menu/bottom_nav_menu" />
+
+</FrameLayout>

@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Bus Tracking System</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_maps2">Map</string>
+    <string name="title_activity_maps3">Map</string>
+    <string name="title_activity_drivers_google_maps">Map</string>
+    <string name="title_activity_maps4">Map</string>
+    <string name="share">share</string>
+    <string name="Logout" />
+    <string name="title_activity_maps5">Map</string>
+    <string name="stop_sharing">Stop Sharing</string>
+
+
+    <string-array name="bus_numbers">
+        <item>B1</item>
+        <item>B2</item>
+        <item>B3</item>
+        <item>B4</item>
+        <item>B5</item>
+        <item>B6</item>
+        <item>B7</item>
+    </string-array>
+
+    <string-array name="routes">
+        <item>KLECET - CKD BUS STAND</item>
+        <item>KLECET - SHIRAGUPPI</item>
+        <item>KLECET - RAIBAG</item>
+        <item>KLECET - SADALAGA</item>
+        <item>KLECET - BORAGANV</item>
+        <item>KLECET - SANKESHWAR</item>
+    </string-array>
+
+
+    <string-array name="branch_list">
+        <item>MCA</item>
+        <item>MBA</item>
+        <item>Computer Science</item>
+        <item>E and C</item>
+        <item>Mechanical</item>
+        <item>Civil</item>
+
+    </string-array>
+
+    <string-array name="semester_list">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+
+
+</resources>
+

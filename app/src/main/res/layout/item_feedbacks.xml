@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="8dp"
+    android:padding="12dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:elevation="2dp">
+
+    <TextView
+        android:id="@+id/tvFeedbackMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Message here"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvFeedbackUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="By: Student ID"
+        android:textSize="12sp"
+        android:textColor="#666"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:id="@+id/tvFeedbackTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time"
+        android:textSize="12sp"
+        android:textColor="#666"
+        android:layout_marginTop="2dp"/>
+</LinearLayout>

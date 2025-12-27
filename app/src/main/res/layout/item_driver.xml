@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@android:color/white"
+    android:padding="12dp"
+    android:layout_marginVertical="4dp"
+    android:elevation="2dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvDriverName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Driver Name"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#000"/>
+
+        <TextView
+            android:id="@+id/tvDriverEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email: example@gmail.com"
+            android:textSize="14sp"
+            android:textColor="#555"/>
+
+        <TextView
+            android:id="@+id/tvDriverRoute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Route: Route 1"
+            android:textSize="14sp"
+            android:textColor="#777"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btnDeleteDriver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:textColor="#FFFFFF"
+        android:background="#E53935"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="8dp"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="8dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:backgroundTintMode="src_in"
+        android:backgroundTint="#E53935"
+        android:fontFamily="sans-serif-medium" />
+</LinearLayout>

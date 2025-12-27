@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/welcometodrivertextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to Driver Portal"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:paddingBottom="20dp"
+            android:textColor="#000000" />
+
+        <!-- Username -->
+        <EditText
+            android:id="@+id/driverusernameeditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:inputType="textPersonName"
+            android:padding="12dp"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Email -->
+        <EditText
+            android:id="@+id/driveremaileditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Password -->
+        <EditText
+            android:id="@+id/driverpasswordeditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Route Number -->
+        <EditText
+            android:id="@+id/RouteNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Route No."
+            android:inputType="number"
+            android:padding="12dp"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Sign Up Button -->
+        <Button
+            android:id="@+id/driversignupbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#2196F3"
+            android:layout_marginBottom="15dp" />
+
+        <!-- Already Have Account -->
+        <TextView
+            android:id="@+id/alreadyhaveanaccountofdrivertextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account? Login here"
+            android:textSize="18sp"
+            android:textColor="#2196F3"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+</ScrollView>

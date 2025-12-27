@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity3">
+
+    <!-- Google Map Fragment -->
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Floating Card for Driver Info -->
+    <LinearLayout
+        android:id="@+id/driverInfoCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="12dp"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:background="@drawable/rounded_white_bg"
+        android:elevation="6dp">
+
+        <TextView
+            android:id="@+id/tvDriverName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Driver: John Doe"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvBusDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bus: 101  |  Route: A"
+            android:textSize="14sp"
+            android:textColor="#555555" />
+    </LinearLayout>
+
+    <!-- Floating Stop Sharing Button -->
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#FF5252"
+        android:text="Stop Sharing"
+        android:textColor="#FFFFFF"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:elevation="8dp" />
+
+    <!-- Floating Recenter Map Button -->
+    <Button
+        android:id="@+id/btnRecenter"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="20dp"
+        android:layout_above="@id/button10"
+        android:background="@drawable/circle_button"
+        android:text="📍"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:elevation="6dp" />
+
+</RelativeLayout>

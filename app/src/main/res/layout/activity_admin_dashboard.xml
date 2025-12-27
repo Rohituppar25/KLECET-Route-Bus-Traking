@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dashboard_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F4F6">
+
+    <!-- Top Title Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:elevation="6dp"
+        android:background="#AEBAEE"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Admin Dashboard"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Main Content -->
+    <ScrollView
+        android:id="@+id/scrollContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomButtons"
+        android:padding="16dp"
+        android:layout_marginTop="120dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Cards Row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <!-- Students Card -->
+                <LinearLayout
+                    android:id="@+id/cardStudents"
+                    android:layout_width="10dp"
+                    android:layout_weight="1"
+                    android:layout_height="160dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/bg_card_blue"
+                    android:layout_margin="8dp"
+                    android:padding="12dp"
+                    android:elevation="8dp">
+
+                    <TextView
+                        android:id="@+id/tvStudentsLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Students"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tvStudentsCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="@android:color/white"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp" />
+                </LinearLayout>
+
+                <!-- Drivers Card -->
+                <LinearLayout
+                    android:id="@+id/cardDrivers"
+                    android:layout_width="10dp"
+                    android:layout_weight="1"
+                    android:layout_height="160dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/bg_card_green"
+                    android:layout_margin="8dp"
+                    android:padding="12dp"
+                    android:elevation="8dp">
+
+                    <TextView
+                        android:id="@+id/tvDriversLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Drivers"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tvDriversCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="@android:color/white"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp" />
+                </LinearLayout>
+
+                <!-- Feedbacks Card -->
+                <LinearLayout
+                    android:id="@+id/cardFeedbacks"
+                    android:layout_width="12dp"
+                    android:layout_weight="1"
+                    android:layout_height="160dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/bg_card_purple"
+                    android:layout_margin="8dp"
+                    android:padding="12dp"
+                    android:elevation="8dp">
+
+                    <TextView
+                        android:id="@+id/tvFeedbackLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Feedbacks"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tvFeedbackCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="@android:color/white"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Bottom Buttons -->
+    <LinearLayout
+        android:id="@+id/bottomButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="12dp"
+        android:background="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:elevation="6dp">
+
+        <Button
+            android:id="@+id/btnSendNotification"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Send Notification"
+            android:layout_marginRight="12dp"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:backgroundTint="@android:color/holo_orange_dark"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</RelativeLayout>
